@@ -30,13 +30,13 @@ const connection = {
 
 const db = pgp(connection);
 
-db.any('SELECT * FROM user_brain', '')
-  .then(data => {
-    console.log('DATA:', data)
-  })
-  .catch(error => {
-    console.log('ERROR:', error)
-  })
+// db.any('SELECT * FROM user_brain', '')
+//   .then(data => {
+//     console.log('DATA:', data)
+//   })
+//   .catch(error => {
+//     console.log('ERROR:', error)
+//   })
 
 app.get('/', (req, res) => {res.send('it is working!')});
 
