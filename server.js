@@ -14,7 +14,7 @@ const image = require('./controllers/image');
 const profile = require('./controllers/profile');
 
 const appClarifai = new Clarifai.App({
- apiKey: 'add-some-key'
+ apiKey: API_KEY
 });
 
 app.use(bodyParser.json());
