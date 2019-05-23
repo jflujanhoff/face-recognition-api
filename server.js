@@ -38,7 +38,8 @@ db.any('SELECT * FROM user_brain', '')
     console.log('ERROR:', error)
   })
 
-app.get('/', (req, res) => {res.send('it is working!')})
+app.get('/', (req, res) => {res.send('it is working!')});
+
 // Sign In --> user POST
 app.post('/signin', (req, res) => {signin.handleSignIn(req, res, db, bcrypt, saltRounds)});
 
