@@ -62,7 +62,7 @@ app.get('/profile/:id', (req, res) => {profile.handleProfile(req, res, db)})
 
 
 app.listen(process.env.PORT || 3000, ()=>{
-  console.log(`app is running port ${proces.env.PORT}`);
+  console.log(`app is running port ${process.env.PORT}`);
 })
 
 // app.set('view engine', 'ejs');
