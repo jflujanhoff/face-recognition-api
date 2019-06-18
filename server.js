@@ -21,12 +21,17 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const connection = {
-    host: 'localhost',
-    port: 5432,
-    database: 'braindb',
-    user: '',
-    password: ''
+  connectionString: process.env.DATABASE_URL,
+  ssl: true,
 };
+
+// const connection = {
+//     host: 'localhost',
+//     port: 5432,
+//     database: 'braindb',
+//     user: '',
+//     password: ''
+// };
 
 const db = pgp(connection);
 
