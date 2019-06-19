@@ -17,8 +17,8 @@ const appClarifai = new Clarifai.App({
  apiKey: process.env.API_KEY
 });
 
-app.use(bodyParser.json());
 app.use(cors());
+app.use(bodyParser.json());
 
 const connection = {
   connectionString: process.env.DATABASE_URL,
