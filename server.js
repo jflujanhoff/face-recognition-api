@@ -31,7 +31,7 @@ const connection = {
 //     database: 'braindb',
 //     user: '',
 //     password: ''
-// };
+// }; OK
 
 const db = pgp(connection);
 
